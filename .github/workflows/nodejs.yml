@@ -19,7 +19,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
-        npm install
-        ng build --configuration=production
+        echo `pwd`
       env:
         CI: true
