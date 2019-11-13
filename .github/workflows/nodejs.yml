@@ -20,6 +20,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         echo `pwd`
-        echo `ll ..`
+        echo `ls`
+        echo `ls ..`
       env:
         CI: true
