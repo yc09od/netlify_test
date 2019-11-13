@@ -20,8 +20,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        echo `pwd`
+        npm ./node_modules/@angular/cli/bin/ng build --configuration=production
         echo `ls`
-        echo `ls ..`
       env:
         CI: true
