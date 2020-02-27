@@ -1,5 +1,9 @@
 pipeline {
-    agent { docker 'node:12.16.1' }
+  agent { 
+    docker {
+      image 'node:12.16.1'
+      args '-p 3000:3000'
+    } }
     stages {
         stage('init') {
             steps {
