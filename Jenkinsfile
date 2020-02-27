@@ -8,6 +8,7 @@ pipeline {
         stage('init') {
             steps {
                 sh 'npm install'
+                sh 'npm update'
             }
         }
         stage('build') {
